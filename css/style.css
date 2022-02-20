@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
 /* Custom Properties, update these for your own design */
 
 :root {
