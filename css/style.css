@@ -30,14 +30,14 @@ html, body {
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
-}
+} */
 
 /* General styles */
 
@@ -231,7 +231,15 @@ header {
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
+
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+
     .intro {
         display: grid;
         width: min-content;
@@ -248,6 +256,8 @@ header {
         min-width: 250px;
         position: relative;
         z-index: 2;
+        border: 10px double black;
+        border-radius: 50%;
     }    
     
     .section__subtitle--intro {
