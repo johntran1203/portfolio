@@ -17,10 +17,9 @@ html, body {
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
-    
+    --clr-light: #0F2F7A;
+    --clr-dark: #fff;
+    --clr-accent: black;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -156,13 +155,14 @@ header {
 
 .nav-toggle {
     padding: .5em;
-    background: transparent;
+    background: black;
     border: 0;
     cursor: pointer;
     position: absolute;
     right: 1em;
     top: 1em;
     z-index: 1000;
+    
 }
 
 .nav-open .nav {
@@ -198,13 +198,12 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     width: 2em;
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
-
 
 .hamburger::before,
 .hamburger::after {
@@ -299,7 +298,7 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-light);
     overflow: hidden;
 }
 
@@ -325,7 +324,7 @@ header {
 
 .footer {
     background: #111;
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
